@@ -1,6 +1,8 @@
 # Проект Telegram Bot на Spring Boot
 (@narrniar_task_bot - бот который используется для получения сообщений от пользователей и отправки их в Telegram)
 
+(JWT secret key + telegram token - находятся в `application.properties`)
+
 
 ## Стек
 - **Spring Boot**: Фреймворк приложения

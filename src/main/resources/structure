@@ -1,0 +1,61 @@
+telegram-bot-api/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── example/
+│   │   │           └── telegramapi/
+│   │   │               ├── TelegramApiApplication.java
+│   │   │               ├── config/
+│   │   │               │   ├── SecurityConfig.java
+│   │   │               │   ├── SwaggerConfig.java
+│   │   │               │   └── TelegramBotConfig.java
+│   │   │               ├── controller/
+│   │   │               │   ├── AuthController.java
+│   │   │               │   ├── MessageController.java
+│   │   │               │   └── TokenController.java
+│   │   │               ├── dto/ DONE
+│   │   │               │   ├── AuthRequest.java
+│   │   │               │   ├── AuthResponse.java
+│   │   │               │   ├── MessageRequest.java
+│   │   │               │   ├── MessageResponse.java
+│   │   │               │   ├── RegisterRequest.java
+│   │   │               │   └── TokenResponse.java
+│   │   │               ├── entity/ DONE
+│   │   │               │   ├── User.java
+│   │   │               │   ├── Message.java
+│   │   │               │   └── UserToken.java
+│   │   │               ├── repository/ DONE
+│   │   │               │   ├── UserRepository.java
+│   │   │               │   ├── MessageRepository.java
+│   │   │               │   └── UserTokenRepository.java
+│   │   │               ├── service/
+│   │   │               │   ├── AuthService.java
+│   │   │               │   ├── MessageService.java
+│   │   │               │   ├── TokenService.java
+│   │   │               │   └── TelegramBotService.java
+│   │   │               └── security/
+│   │   │                   ├── JwtAuthenticationEntryPoint.java
+│   │   │                   ├── JwtAuthenticationFilter.java
+│   │   │                   └── JwtTokenProvider.java
+│   │   └── resources/
+│   │       ├── application.yml
+│   │       ├── application-dev.yml
+│   │       └── application-prod.yml
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── telegramapi/
+│                       ├── TelegramApiApplicationTests.java
+│                       ├── controller/
+│                       │   ├── AuthControllerTest.java
+│                       │   ├── MessageControllerTest.java
+│                       │   └── TokenControllerTest.java
+│                       └── service/
+│                           ├── AuthServiceTest.java
+│                           ├── MessageServiceTest.java
+│                           └── TokenServiceTest.java
+├── docker-compose.yml
+├── Dockerfile
+└── pom.xml

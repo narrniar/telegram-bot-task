@@ -1,0 +1,18 @@
+spring:
+    profiles:
+        active: dev
+    application:
+        name: telegram-bot-api
+
+jwt:
+    secret: R1BYcTVXVGNDU2JmWHVnZ1lnN0FKeGR3cU1RUU45QXV4SDJONFZ3ckhwS1N0ZjNCYVkzZ0F4RVBSS1UzRENwRw==
+    expiration: 86400000 # 24 hours
+
+telegram:
+    bot:
+        token: ${TELEGRAM_BOT_TOKEN:7734576766:AAE8pOOa8ycOTeZQulKK6KDEeJiZrIPeYOM}
+        username: ${TELEGRAM_BOT_USERNAME:@narrniar_task_bot}
+
+logging:
+    level:
+        com.example.task: DEBUG
